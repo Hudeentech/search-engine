@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/font-6/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap" rel="stylesheet">
+    <link href="./output.css" rel="stylesheet">
+    <script defer src="./main/animation.js"></script>
+    <script defer src="./main/suggestion.js"></script>
+    <title>home</title>
+</head>
+
+ <body id="background" >
+        
+    <div class=" px-y w-[200px] top-8 left-7 fixed hidden sm:block   sm:w-[250px] backdrop-blur-lg rounded-lg shadow-lg mb-24 " id="quote-card">
+        <p class="text-sm p-5 text-white ">"In the midst of winter, I found there was, within me, an invincible summer." - Albert </p>
+   </div>
+
+    <div class="mx-auto w-[95%] mt-16 max-w-screen-lg sm:min-w-[45%] pt-4">
+        <div class="flex flex-col justify-center items-center">
+
+            <div class="flex p-3 my-3">
+                <img class=" w-52 sm:w-64"  src="./assets/quatum-main.svg" alt="">
+            </div>
+            <!-- Search Bar -->
+            <div  class="flex flex-row items-center justify-center  my-4 w-full sm:w-[50%] m-auto">
+                <div class=" wrapper min-w-full flex flex-row mx-auto my-2">
+                    <div class="search-input relative w-full flex flex-row items-center justify-center">
+                        <a href="" target="_blank" hidden></a>
+
+                        <!-- ****************inpput***************** -->
+                        <input type="text" placeholder="Type to search.."
+                            class=" min-w-full bg-white rounded-full shadow-md text-sm py-4 px-4 outline-none"
+                            style="padding-right: 60px; padding-left:40px;">
+    
+                            <div id="icon" class="absolute top-0 left-3 h-full flex items-center mr-4 bg-gradient-to-tr from-yellow-400 to-purple-700 bg-clip-text text-transparent">
+                                <i  class="fas fa-search text-xl"></i>
+                            </div>
+                            <div id="icon" class="absolute top-0 right-7 h-full flex items-center mr-4 bg-gradient-to-tr from-yellow-400 to-purple-700 bg-clip-text text-transparent">
+                                <i  class="fas fa-qrcode text-xl"></i>
+                            </div>
+                            <div id="icon" class="absolute top-0 right-0 h-full flex items-center mr-4 bg-gradient-to-tr from-yellow-400 to-purple-700 bg-clip-text text-transparent">
+                                <i  class="fas fa-microphone text-xl"></i>
+                            </div>
+
+                            <!-- ***************** auto complete ***************** -->
+                        <div class="autocom-box absolute empty:hidden w-full dark:bg-slate-700  bg-white rounded-md shadow-md overflow-y-auto  max-h-60 mt-10 top-8 transition-opacity hidden "></div>
+                    </div>
+                </div>
+            
+            </div>
+
+            <div id="bookmarks" class="container w-full md:max-w-[65%] sm:max-w-[50%] flex flex-row flex-wrap items-center justify-center mx-auto gap-2 lg:grid-cols-4 :grid-cols-3  mt-10">
+                <button id="addBookmark" class="bg-yellow-300 hover:bg-yellow-400 text-purple-900 text-2xl font-bold w-14 h-14  rounded-full"><i class="fas fa-plus"></i></button>
+                
+                <div class="p-2 rounded-full bg-white w-fit">
+                    <img src="./assets/icon.png" class=" w-11 h-11  rounded-full" alt="">
+                </div>
+                
+                <div class="p-2 rounded-full bg-white w-fit">
+                    <img src="./assets//icons (1).png" class=" w-11 h-11  rounded-full" alt="">
+                </div>
+                
+                <div class="p-2 rounded-full bg-white w-fit">
+                    <img src="./assets//icons (1).jpg" class=" w-11 h-11  rounded-full" alt="">
+                </div>
+                
+                <div class="p-2 rounded-full bg-white w-fit">
+                    <img src="./assets//icons (2).png" class=" w-11 h-11  rounded-full" alt="">
+                </div>
+                
+                <div class="p-2 rounded-full bg-white w-fit">
+                    <img src="./assets//icons (2).jpg" class=" w-11 h-11  rounded-full" alt="">
+                </div>
+                
+                <div class="p-2 rounded-full bg-white w-fit">
+                    <img src="./assets//icons (3).png" class=" w-11 h-11  rounded-full" alt="">
+                </div>
+                
+                <div class="p-2 rounded-full bg-white w-fit">
+                    <img src="./assets//icons (3).jpg" class=" w-11 h-11  rounded-full" alt="">
+                </div>
+                
+                <div class="p-2 rounded-full bg-white w-fit">
+                    <img src="./assets//icons (4).png" class=" w-11 h-11  rounded-full" alt="">
+                </div>
+                
+                <div class="p-2 rounded-full bg-white w-fit">
+                    <img src="./assets//icons (4).jpg" class=" w-11 h-11  rounded-full" alt="">
+                </div>
+                
+                <div class="p-2 rounded-full bg-white w-fit">
+                    <img src="./assets//icons (5).png" class=" w-11 h-11  rounded-full" alt="">
+                </div>
+                
+                <div class="p-2 rounded-full bg-white w-fit">
+                    <img src="./assets//icons (5).jpg" class=" w-11 h-11  rounded-full" alt="">
+                </div>
+                
+            </div>
+              
+            
+          
+        </div>
+       
+    </div>
+
+</body>
+</html>

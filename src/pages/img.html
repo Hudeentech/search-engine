@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Search Results</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/font-6/css/all.css">
+    <link href="/src/output.css" rel="stylesheet">
+
+    <script defer src="../main/theme.js"></script>
+    <script defer src="../main/suggestion.js"></script>
+
+</head>
+
+<body class="dark:bg-custom-bg bg-yellow-50">
+
+    <div id="container" class="container m-auto h-screen overflow-y-scroll">
+            
+        <nav class="w-[85%] text-[gold] m-auto p-4 my-4">
+            <div class="max-w-7xl mx-auto flex justify-between items-center">
+                <div class="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-purple-700">
+                    <a href="../index.html" class="font-bold text-3xl">Quantum</a>
+                </div>
+    
+                <div  class="theme py-1 z-30 px-2 shadow-lg rounded-md bg-purple-800">   
+                    <i class="fas fa-cog  text-2xl hover:rotate-45 transition-transform "></i>
+                </div>
+    
+                
+    
+                    <div  class="theme-options ease-linear duration-500 fixed hidden
+                     flex-col shadow-2xl dark:bg-[#2f2f2b] bg-white dark:bg- justify-center items-center gap-1 z-20 top-0 h-full w-[50%] transition-all md:w-[35%] rounded-md right-0">
+    
+                        <div class="w-11/12">
+                            <h3 class="py-4 px-3 sm:text-5xl text-3xl text-left font-semibold capitalize dark:text-yellow-400 text-gray-800">themes</h3>
+                        </div>
+    
+                        <div id="theme-toggle-light" class="pl-4 w-full py-3 flex flex-row items-center gap-3 capitalize dark:text-[#cfcfcf] hover:bg-purple-900 hover:text-yellow-400  text-gray-800 dark:hover:bg-[#313131]">
+                            <i class="fas fa-sun mr-3 text-xl text-yellow-400 "></i>
+                            <p>light mode</p>
+                        </div>
+            
+                        <div id="theme-toggle-dark" class="px-4 w-full py-3 flex flex-row items-center gap-3 capitalize dark:text-[#cfcfcf] hover:bg-purple-900 hover:text-yellow-400  text-gray-800 dark:hover:bg-[#313131]">
+                            <i class="fas fa-moon mr-3 text-xl text-yellow-400"></i>
+                            <p>dark mode</p>
+                        </div>
+            
+                        <div id="theme-toggle-dark" class="px-4 w-full py-3 flex flex-row items-center gap-3 capitalize dark:text-[#cfcfcf] hover:bg-purple-900 hover:text-yellow-400  text-gray-800 dark:hover:bg-[#313131]">
+                            <i class="fas fa-fan mr-3 text-xl text-yellow-400"></i>
+                            <p>rose red</p>
+                        </div>
+            
+                        <div id="theme-toggle-dark" class="px-4 w-full py-3 flex flex-row items-center gap-3 capitalize dark:text-[#cfcfcf] hover:bg-purple-900 hover:text-yellow-400  text-gray-800 dark:hover:bg-[#313131]">
+                            <i class="fas fa-droplet mr-3 text-xl text-yellow-400 "></i>
+                            <p>droplet</p>
+                        </div>
+            
+                        <div id="theme-toggle-dark" class="px-4 w-full py-3 flex flex-row items-center gap-3 capitalize dark:text-[#cfcfcf] hover:bg-purple-900 hover:text-yellow-400  text-gray-800 dark:hover:bg-[#313131]">
+                            <i class="fas fa-wand-magic-sparkles mr-3 text-xl text-yellow-400 block"></i>
+                            <p>roya purple</p>
+                        </div>
+            
+                        <div id="theme-toggle-dark" class="px-4 w-full py-3 flex flex-row items-center gap-3 capitalize  dark:text-[#cfcfcf] hover:bg-purple-900 hover:text-yellow-400 dark:hover:bg-[#313131] text-gray-800">
+                            <i class="fas fa-water mr-3 text-xl text-yellow-400 block"></i>
+                            <p>ocean blue</p>
+                        </div>
+                    </div>
+                    </div>
+        </nav>
+    
+        <!-- ******************** second nav ********************* -->
+        <div id="navbar" class="z-[100] transition-transform hidden w-full dark:bg-[#2b2b2b] bg-purple-800 fixed top-0 right-0 left-0 ">
+            <nav class="max-w-7xl mx-auto w-11/12 text-[gold] flex flex-row justify-between gap-4 items-center ">
+                <div class="hidden sm:block">
+                    <a class="hidden sm:block" href="../index.html"><img class="w-[150px] p-2" src="../assets/logo-c.svg" alt=""></a>
+                </div>
+    
+                <div  class="relative flex flex-row items-center justify-center  w-full m-auto">
+                    <div class="wrapper min-w-[95%] flex flex-row z-10 mx-auto my-2">
+                        <div class="search-input relative w-full flex flex-row items-center justify-center">
+                            <a href="" target="_blank" hidden></a>
+                            <input type="text" placeholder="Type to search.."
+                                class="min-w-full bg-white dark:bg-[#353535] dark:text-white text-gray-800 rounded-full text-sm py-3 px-4 outline-none"
+                                style="padding-right: 60px; padding-left: 50px;">
+        
+                            <div id="icon" class="absolute top-0 left-0 h-full flex items-center mr-4 bg-gradient-to-tr from-yellow-500 to-purple-900 bg-clip-text text-transparent">
+                                <a class="block" href="../index.html"><img class="w-[50px] p-2" src="../assets/logo-main.svg" alt=""></a>
+                            </div>
+                            <div id="icon" class="absolute top-0 right-7 h-full flex items-center mr-4">
+                                <i  class="fas fa-qrcode bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-purple-700"></i>
+                            </div>
+                            <div id="icon" class="absolute top-0 right-0 h-full flex items-center mr-4">
+                                <i  class="fas fa-microphone bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-purple-700"></i>
+                            </div>
+    
+                            <!-- ******************** auto complete ********************* -->
+                            <div class="autocom-box absolute empty:hidden w-full dark:bg-[#393939]  bg-white rounded-md shadow-md overflow-y-auto max-h-60 mt-10 top-8 transition-opacity hidden ">
+    
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+    
+                <div class=" theme py-1 z-30 px-2 shadow-lg rounded-md bg-purple-800">   
+                    <i class="fas fa-cog  text-2xl hover:rotate-45 transition-transform "></i>
+                </div>
+    
+                   
+        </nav>
+        </div>
+        
+    
+        <!-- ********************** container-with-input ************************** -->
+    
+        <div class="container max-w-screen-xl w-[98%] md:w-[90%] m-auto rounded-2xl ">
+            <!-- Search Bar -->
+            <div  class="relative flex flex-row items-center justify-center  my-4 w-full m-auto">
+                <div id="second-input-container" class="wrapper min-w-[90%] flex flex-row z-10 mx-auto my-2">
+                    <div class="search-input relative w-full flex flex-row items-center justify-center">
+                        <a href="" target="_blank" hidden></a>
+                        
+                        <!-- *************** input ********************** -->
+                        <input type="text" placeholder="Type to search.."
+                        class="min-w-full dark:bg-[#2f2f2b] dark:border dark:text-gray-200 dark:border-gray-800  border border-yellow-500 bg-yellow-100 rounded-full text-sm py-4 px-4 outline-none"
+                        style="padding-right: 60px; padding-left: 40px;">
+    
+                    <div id="icon" class="absolute top-0 left-3 h-full flex items-center mr-4 bg-gradient-to-tr from-yellow-400 to-purple-700 bg-clip-text text-transparent">
+                        <i  class="fas fa-search text-xl"></i>
+                    </div>
+                    <div id="icon" class="absolute top-0 right-7 h-full flex items-center mr-4 bg-gradient-to-tr from-yellow-400 to-purple-700 bg-clip-text text-transparent">
+                        <i  class="fas fa-qrcode text-xl"></i>
+                    </div>
+                    <div id="icon" class="absolute top-0 right-0 h-full flex items-center mr-4 bg-gradient-to-tr from-yellow-400 to-purple-700 bg-clip-text text-transparent">
+                        <i  class="fas fa-microphone text-xl"></i>
+                    </div>
+                    
+                        <!-- ****************** auto complete*************************** -->
+                        <div class="autocom-box absolute empty:hidden w-full dark:bg-[#2f2f2b]  bg-white rounded-md shadow-md overflow-y-auto max-h-60 mt-10 top-8 transition-opacity hidden ">
+    
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+    
+            <!-- ********************** tabs and links ************************* -->
+         <div id="suggestion-tab" class="z-10 flex mx-auto flex-row my-4 p-4 gap-4 justify-start sm:justify-center 
+          overflow-x-auto text-sm w-[95%] items-center border-b dark:border-yellow-400 border-gray-300">
+        </div>
+    
+        <!-- Search Results -->
+        <div  id="searchs" class="my-4 -z-10 m-auto grid  lg:grid-cols-[repeat(2, auto)] gap-4 space-y-4 space-x-4 px-[1em] sm:px-[2.5em]">
+    
+<!-- Search Results -->
+
+<div class="flex flex-wrap justify-center items-center gap-3">
+
+   <div class="m[ax-w-]44 hover:scale-105  transition-all sm:max-w-52 md:max-w-72">
+    <img class="w-[300px] rounded-md h-[200px] object-cover" src="../assets/img (9).jpg" alt="Image 1">
+     
+   </div>
+   <div class="max-w-44 hover:scale-105  transition-all sm:max-w-52 md:max-w-72">
+    <img class="w-[300px] rounded-md h-[200px] object-cover" src="../assets/img (8).jpg" alt="Image 1">
+     
+   </div>
+   <div class="max-w-44 hover:scale-105  transition-all sm:max-w-52 md:max-w-72">
+    <img class="w-[300px] rounded-md h-[200px] object-cover" src="../assets/img (7).jpg" alt="Image 1">
+     
+   </div>
+   <div class="max-w-44 hover:scale-105  transition-all sm:max-w-52 md:max-w-72">
+    <img class="w-[300px] rounded-md h-[200px] object-cover" src="../assets/img (6).jpg" alt="Image 1">
+     
+   </div>
+   <div class="max-w-44 hover:scale-105  transition-all sm:max-w-52 md:max-w-72">
+    <img class="w-[300px] rounded-md h-[200px] object-cover" src="../assets/img (108).jpg" alt="Image 1">
+     
+   </div>
+   <div class="max-w-44 hover:scale-105  transition-all sm:max-w-52 md:max-w-72">
+    <img class="w-[300px] rounded-md h-[200px] object-cover" src="../assets/img (107).jpg" alt="Image 1">
+     
+   </div>
+   <div class="max-w-44 hover:scale-105  transition-all sm:max-w-52 md:max-w-72">
+    <img class="w-[300px] rounded-md h-[200px] object-cover" src="../assets/img (104).jpg" alt="Image 1">
+     
+   </div>
+   <div class="max-w-44 hover:scale-105  transition-all sm:max-w-52 md:max-w-72">
+    <img class="w-[300px] rounded-md h-[200px] object-cover" src="../assets/img (102).jpg" alt="Image 1">
+     
+   </div>
+   <div class="max-w-44 hover:scale-105  transition-all sm:max-w-52 md:max-w-72">
+    <img class="w-[300px] rounded-md h-[200px] object-cover" src="../assets/img (1).jpg" alt="Image 1">
+     
+   </div>
+  </div>
+  
+
+
+</div>
+ 
+</body>
+
+</html>
