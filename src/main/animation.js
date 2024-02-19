@@ -1,5 +1,5 @@
 
-const images = ['./assets/img (1).jpg', './assets/img (10).jpg', './assets/img (100).jpg'];
+const images = ['../assets/img (18).jpg', '../assets/img (13).jpg', '../assets/img (11).jpg'];
 
 
 
