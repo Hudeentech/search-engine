@@ -1,5 +1,5 @@
 
-const images = ['./assets/img (1).jpg', './assets/img (10).jpg', './assets/img (100).jpg'];
+const images = ['./assets/img (18).jpg', './assets/img (13).jpg', './assets/img (11).jpg'];
 
 
 
@@ -65,7 +65,7 @@ function changeQuote() {
 
     // Resume rotation when mouse leaves the quote container
     quoteContainer.addEventListener('mouseleave', () => {
-        quoteInterval = setInterval(displayQuote, 5000); // Restart the quote rotation
+        quoteInterval = setInterval(displayQuote, 10000); // Restart the quote rotation
     });
 }
 
