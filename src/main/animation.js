@@ -1,5 +1,9 @@
 
+<<<<<<< HEAD
 const images = ['/assets/img (18).jpg', '/assets/img (13).jpg', '/assets/img (11).jpg'];
+=======
+const images = ['../assets/img (18).jpg', '../assets/img (13).jpg', '../assets/img (11).jpg'];
+>>>>>>> a007af8d54649a0cbd413483b83047f9411eae17
 
 
 
